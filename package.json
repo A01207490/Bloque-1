@@ -1,0 +1,22 @@
+{
+  "name": "bloque1",
+  "version": "1.0.0",
+  "description": "Laboratorios y archivos del proyecto de bloque 1.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A01207490/BLOQUE1.git"
+  },
+  "author": "Alberto Alonso Vazquez Plata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A01207490/BLOQUE1/issues"
+  },
+  "homepage": "https://github.com/A01207490/BLOQUE1#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
