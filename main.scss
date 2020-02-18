@@ -13,16 +13,19 @@ $Periwinkle:     #D0E1F9;
 $light:          #FFFFFF;
 $dark:           #000000;
 
+$spring_green:   #89DA59;
+$stem:           #80BD9D;
+$petal:          #F98866;
 i.icon-light {
   color:         $light;
 }
 
 $theme-colors: (
-  "primary":     $shadow,
-  "secondary":   $indigo_ink,
-  "info":        $mist,
+  "primary":     $petal,
+  "secondary":   $stem,
+  "info":        $spring_green,
   "light":       $light,
-  "dark":        $dark
+  "dark":        $light
 );
 
 body {
