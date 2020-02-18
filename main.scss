@@ -1,7 +1,28 @@
 // Custom.scss
+// Subdued & Professional
+$mist:           #90AFC5;
+$stone:          #336B87;
+$shadow:         #2A3132;
+$autum_foliage:  #763626;
+// Berry Blues
+$midnight_blue:  #1E1F26;
+$indigo_ink:     #4D648D;
+$blueberry:      #D0E1F9;
+$Periwinkle:     #D0E1F9;
+
+$light:          #FFFFFF;
+$dark:           #000000;
+
+i.icon-light {
+  color:         $light;
+}
+
 $theme-colors: (
-    "primary": #3beb84,
-    "secondary": #f886c9
+  "primary":     $shadow,
+  "secondary":   $indigo_ink,
+  "info":        $mist,
+  "light":       $light,
+  "dark":        $dark
 );
 
 body {
@@ -50,6 +71,10 @@ body {
   }
 
 
-// Option A: Include all of Bootstrap
 
+
+
+// Custom.scss
+
+// Option A: Include all of Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
