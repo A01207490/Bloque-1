@@ -21,7 +21,7 @@ i.icon-light {
 }
 
 $theme-colors: (
-  "primary":     $petal,
+  "primary":     $stone,
   "secondary":   $stem,
   "info":        $spring_green,
   "light":       $light,
@@ -56,7 +56,8 @@ body {
   
   #wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
-  }
+  }@import "node_modules/bootstrap/scss/bootstrap";
+
   
   @media (min-width: 768px) {
     #sidebar-wrapper {
