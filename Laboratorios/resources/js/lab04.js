@@ -1,6 +1,3 @@
-
-fun4();
-
 function fun1(){
   const rows = prompt("Ingresa un número");
   var j=1;
@@ -15,7 +12,9 @@ function fun1(){
     j = 1;
   }
   output = output + "</table>";
-  document.write(output);
+  var obj = Object.create(null);
+  obj = output;
+  document.getElementById("myTable").insertAdjacentHTML("afterend", output); 
 }
 
 function fun2 (){
@@ -48,19 +47,43 @@ function fun3 (){
 }
 
 function fun4(){
-  const arr = prompt("Ingresa un arreglo de arreglo de números, separa los números con un espacio y los arreglos con un ;").split(";")
-  var promedios = new Array()
-  var cont = 0
+  const arr = prompt("Ingresa un arreglo de arreglo de números, separa los números con una coma y los arreglos con un ;").split(";");
+  var promedios = new Array();
+  var cont = 0;
   for(i=0;i<arr.length;i++){
-    var aux = arr[i].split(" ") 
+    var aux = arr[i].split(","); 
     for(j=0;j<aux.length;j++){
-      cont = cont + aux[j]
-      console.log(aux[j]);
+      cont = cont + parseInt(aux[j], 10);
+      console.log(cont);
     }
-    cont = cont / aux.length
-    promedios.push(cont)
-    cont = 0
+    cont = cont / aux.length;
+    promedios.push(cont);
+    cont = 0;
   }
   window.alert("Los promedios respectivos fueron: " + promedios.toString());
 }
 
+function fun5(){
+  var num = prompt("Ingresa un número: ");
+  window.alert("El número con sus dígitos en orden inverso es: " + num.split('').reverse().join(''));
+}
+
+function fun6(){
+
+  var myCar = new Car("Camaro", "Convertible", 1996, "Beto");
+
+  myCar.displayCar();
+
+  function Car(make, model, year, owner) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.owner = owner;
+    this.displayCar = displayCar;
+  }
+
+  function displayCar() {
+    window.alert(`A Beautiful ${this.year} ${this.make} ${this.model}`);
+  }
+
+}

@@ -3,26 +3,29 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Custom SASS for this template -->
-  <link href="../../main.css" rel="stylesheet">
-  <link href="../resources/css/collapsedSidebar.css" rel="stylesheet">
+  <link href="../main.css" rel="stylesheet">
+  <link href="resources/css/collapsedSidebar.css" rel="stylesheet">
   <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
 </head>
 <body >
+  <!-- Side Navbar -->
   <div id="mySidebar" class="sidebar">
     <div class="header">
-      <img src="../resources/images/profile.jpg" class="iconprofile">
+      <img src="resources/images/profile.jpg" class="iconprofile">
       <h5> Alberto Vázquez Plata</h5>
     </div>
-    <a href="../lab01/lab01.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 1</a>
-    <a href="#" class="btn-purple"><i class="material-icons">folder</i>Cuestionario 1</a>
-    <a href="../lab04/lab04.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 4</a>
-    <a href="#" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 5</a>
+    <a href="lab01.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 01</a>
+    <a href="cue01.html" class="btn-purple"><i class="material-icons">folder</i>Cuestionario 01</a>
+    <a href="lab04.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 04</a>
+    <a href="lab05.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 05</a>
   </div>
+  <!-- End Side Navbar -->
 
   <!--------------------------------------------------------------------------------------->
 
+  <!-- Page Content -->
   <div id="main">
     <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
@@ -32,15 +35,15 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Preguntas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
+          <a class="nav-link" id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
         </li>
       </ul>
-      <!-- Nav tabs -->
+      <!-- End Nav tabs -->
     </nav>
-    <!-- Top Navbar -->
+    <!-- End Top Navbar -->
 
     <!--------------------------------------------------------------------------------------->
 
@@ -53,13 +56,13 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="../resources/images/zelda.jpg" alt="First slide">
+                <img class="d-block w-100" src="resources/images/zelda.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../resources/images/metroid.png" alt="Second slide">
+                <img class="d-block w-100" src="resources/images/metroid.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="../resources/images/super_mario.jpg" alt="Third slide">
+                <img class="d-block w-100" src="resources/images/super_mario.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -115,6 +118,7 @@
           <h5>¿Cuál es la diferencia entre Internet y la World Wide Web?</h5>
 
           <p>El internet es una colección global de redes, mientras que la World Wide Web es una colección de información y datos que pueden ser accesados a través del internet. [1]</p> 
+          <br>
 
           <h5>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h5>
 
@@ -141,67 +145,67 @@
             </ul>
             <p>[2]</p>
           </p> 
-          <
+          <br>
 
-          <h6>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h6>
+          <h5>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h5>
 
           <p>Debido a que se esta mandado un formulario, se tendría que utilizar el método POST. [2]</p> 
 
+          <br>
 
-
-          <h6>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </h6>
+          <h5>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </h5>
 
           <p>Se utiliza el método GET, ya que se esta solicitando un recurso en específico. [2]</p> 
 
+          <br>
 
 
-
-          <h6>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </h6>
+          <h5>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </h5>
 
           <p>En general independientemente del método usado, el código 200 indica que la solicitud se realizó de manera exitosa. [3]</p> 
 
+          <br>
 
 
-
-          <h6>Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué? </h6>
+          <h5>Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué? </h5>
 
           <p>El código de error 404 indica que el servidor no puede encontrar el recurso solicitado, usualmente porque los vínculos están muertos o ya no apuntan a su recurso original debido a que este ha sido re-ubicado o no esta disponible de manera permanente. Por ello, cuando se dan incidencias de este código, usualmente es responsabilidad de los desarrolladores que no han actualizado de manera correcta sus recursos y correspondientes vínculos. [4]</p> 
 
+          <br>
 
-
-          <h6>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h6>
+          <h5>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h5>
 
           <p>Este código de error indica que el servidor encontró una condición inesperada que le impidió completar la solicitud; es un error genérico que utiliza cuando no se puede proporcionar un mejor código de error 5xx que sea más específico. Por lo tanto, no se puede decir con certeza si es responsabilidad o no del desarrollador. [5]</p> 
 
+          <br>
 
 
-
-          <h6>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h6>
+          <h5>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h5>
 
           <p>Que una tag o atributo este despreciado, quiere decir que se han remplazado por otras nuevas; es decir, se han vuelto obsoletos, por lo que se recomienda evitar su uso. Algunos ejemplos son: ISINDEX, APPLET, CENTER y FONT. [6]</p> 
 
+          <br>
 
 
-
-          <h6>¿Cuáles son las diferencias principales entre HTML 4 y HTML5? </h6>
+          <h5>¿Cuáles son las diferencias principales entre HTML 4 y HTML5? </h5>
 
           <p>HTML 5 es mucho más simple que su predecesor.  Debido a que HTML5 es más consistente, en mucho más fácil corregir errores. También cuenta con nuevas tags, y provee soporte para contenido multimedia. Sin embargo, debido a que HTML5 es la versión más reciente, HTML4 cuenta con mayor compatibilidad en diferentes navegadores. [7]</p> 
+          <br>
 
-
-          <
-          <h6>¿Qué componentes de estructura y estilo tiene una tabla? </h6>
+          
+          <h5>¿Qué componentes de estructura y estilo tiene una tabla? </h5>
 
           <p>La estructura de una tabla se define utilizando la tag “table”, que contiene celdas definidas por “td” organizadas por filas “tr”, no por columnas. Algunas propiedades de CSS que dan estilo a una tabla son: border, padding, text-align, colspan y rowspan. [8]</p> 
-
-          <h6>¿Cuáles son los principales controles de una forma HTML5? </h6>
+          <br>
+          <h5>¿Cuáles son los principales controles de una forma HTML5? </h5>
 
           <p>Las formas de HTML5 permiten aceptar entrada del usuario de una manera específica. Algunas de las principales formas son: input text control, input type submit, input type radio, input type checkbox, etc. [9] </p> 
-
-          <h6>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h6>
+          <br>
+          <h5>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h5>
 
           <p>El navegador firefox en un distro basado en Ubuntu, tiene un puntaje de 468/555.</p> 
-          >
-          <h6>¿Cuál es el ciclo de vida de los sistemas de información? </h6>
+          <br>
+          <h5>¿Cuál es el ciclo de vida de los sistemas de información? </h5>
 
           <p>
             <ol>
@@ -214,9 +218,9 @@
             <p>[10]</p>
           </p> 
 
+          <br>
 
-
-          <h6>¿Cuál es el ciclo de desarrollo de sistemas de información?</h6>
+          <h5>¿Cuál es el ciclo de desarrollo de sistemas de información?</h5>
 
           <p>
             <ol>
@@ -230,10 +234,10 @@
             </ol>
             <p>[11]</p>
           </p> 
-
+          <br>
 
           <p>
-            <h6>Referencias</h6>
+            <h5>Referencias</h5>
             <ul>
               <li>[1] https://www.geeksforgeeks.org/whats-difference-internet-web/</li>
               <li>[2] https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods </li>
@@ -265,16 +269,25 @@
 
             </ul>
           </p>
+          <br>
         </div>
         <!--------------------------------------------------------------------------------------->
       </div>
 
 
     </div>
+
   </div>
 
-
-
+  
+  <footer class="fixed-bottom" id="myFooter">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Laboratorio 01</a></li>
+        <li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
+      </ol>
+    </nav>
+  </footer>
 
 
 
@@ -282,7 +295,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <script src="../resources/js/collapsedSidebar.js"></script>
+  <script src="resources/js/collapsedSidebar.js"></script>
 
   
 </body>

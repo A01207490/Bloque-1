@@ -33,25 +33,25 @@ body {
   padding-bottom:      10px;
   padding-left:        20px;
   padding-right:       20px;
-  font-size:           20px;
+  font-size:           18px;
   font-weight:         bold;
   text-decoration:     none;
   color:               var(--peach);
   background-color:    var(--secondary);
   border-bottom-style: solid;
   border-color:        var(--purple);
-  border-width:        2px;
+  border-width:        1px;
 }
 
 .sidebar i {
   padding-right:    10px;
-  font-size:        20px;
+  font-size:        18px;
   color:            var(--purple);
 }
 
 img.iconprofile {
-  height:              100px;
-  width:               100px;
+  height:              75px;
+  width:               75px;
   display:             block;
   border-radius:       50%;
   margin-left:         auto;
@@ -67,7 +67,7 @@ img.iconprofile {
   border-bottom-style: solid;
   border-color:        var(--green);
   border-width:        5px;
-  background-image:    url("../images/botw.jpg");
+  background-image:    url("../images/splatoon2.jpg");
   background-size:     cover;
   background-repeat:   no-repeat;
 
@@ -75,17 +75,11 @@ img.iconprofile {
 
 
 .header h5{
-  color:               var(--yellow);
+  color:               var(--primary);
   font-size:           16px;
   font-weight:         bold;
   text-align:          center;
   
-}
-
-.p ul {
-  color:            var(--green);
-  font-size:        20px;
-  font-weight:      bold;
 }
 
 
@@ -103,14 +97,55 @@ img.iconprofile {
   z-index: 10;
 }
 
+#myFooter{
+  padding-right:    40px;
+  padding-left:     40px;
+  padding-top:      10px;
+  background-color: var(--secondary);
+  border-top-style: solid;
+  border-color:        var(--yellow);
+  border-width:        5px;
+}
+
+.breadcrumb {
+  padding-right:    auto;
+  padding-left:     auto;
+  width:            auto;
+  background-color: var(--secondary);
+}
+
+.breadcrumb li{
+  color:            var(--pink);
+  font-weight:      bold;
+  font-size:        18px;
+  border-bottom-style: solid;
+  border-color:        var(--green);
+  border-width:        2px;
+}
+
+.breadcrumb a{
+  color:            var(--pink);
+  font-weight:      bold;
+  font-size:        18px;
+
+
+}
+
+.breadcrumb-item{
+  color:            var(--yellow);
+}
+
 .container-fluid{
   z-index: 5;
+  color:            var(--green);
+  font-size:        18px;
+  font-weight:      bold;
 }
 
 .nav-item a {
   color:            var(--light);
   font-weight:      bold;
-  font-size:        20px;
+  font-size:        18px;
   border-style:     none
 }
 
@@ -121,16 +156,11 @@ img.iconprofile {
   padding-right:    20px;
 }
 
-.tab-pane p {
-  color:            var(--green);
-  font-size:        20px;
-  font-weight:      bold;
-}
 
 .tab-pane h5 {
   color:            var(--purple);
   font-weight:      bold;
-  font-size:        20px;
+  font-size:        18px;
 }
 
 
@@ -154,4 +184,13 @@ img.iconprofile {
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+#launch{
+  padding-top:      8px;
+  padding-bottom:   0px;
+  padding-left:     10px;
+  padding-right:    10px;
+  
+  display:             block;
 }

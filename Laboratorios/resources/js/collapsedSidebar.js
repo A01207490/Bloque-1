@@ -19,3 +19,14 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+
+var setText = $('.breadcrumb .set-text');
+setText.addClass('active');
+var initText = $('.nav-tabs .active').text();
+setText.text(initText);
+
+$('.nav-tabs li a').on('click', function () {
+  setText.text($(this).text());
+});

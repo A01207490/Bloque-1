@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Custom SASS for this template -->
+	<link href="../main.css" rel="stylesheet">
+	<link href="resources/css/collapsedSidebar.css" rel="stylesheet">
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body >
+	<!------------------------------------------------------------------------------------------------------->
+	
+	<!-- Side Navbar -->
+	<div id="mySidebar" class="sidebar">
+		<div class="header">
+			<img src="resources/images/profile.jpg" class="iconprofile">
+			<h5> Alberto Vázquez Plata</h5>
+		</div>
+		<a href="lab01.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 01</a>
+		<a href="cue01.html" class="btn-purple"><i class="material-icons">folder</i>Cuestionario 01</a>
+		<a href="lab04.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 04</a>
+		<a href="lab05.html" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 05</a>
+	</div>
+	<!-- End Side Navbar -->
+
+	<!------------------------------------------------------------------------------------------------------->
+
+	<!-- MAIN -->
+	<div id="main">
+		<!--------------------------------------------------------------------------------------->
+
+		<!-- TOP NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
+			<!-- Toogle Sidebar Button -->
+			<button class="btn btn-green" onclick="toogleNav()"><i class="material-icons text-primary">menu</i></button> 
+			<!-- End Toogle Sidebar Button -->
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="funciones-tab" data-toggle="tab" href="#funciones" role="tab" aria-controls="funciones" aria-selected="true">Funciones</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
+				</li>
+			</ul>
+			<!-- End Nav tabs -->
+		</nav>
+		<!-- END TOP NAVBAR -->
+
+		<!--------------------------------------------------------------------------------------->
+
+		<!-- PAGE CONTENT -->
+		<div class="container-fluid bg-info content">
+			<!-- Contenido de las tabs -->
+			<div class="tab-content">
+				<!-- Funciones -->
+				<div class="tab-pane active" id="funciones" role="tabpanel" aria-labelledby="funciones-tab">
+					<!-- Funcion 1 -->
+					<h5>
+						Función 1
+					</h5>
+					<p>
+						Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida 
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun1()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<p id="myTable"></p>
+					<br>
+					<!-- End Funcion 1 -->
+					<!-- Funcion 2 -->
+					<h5>
+						Función 2
+					</h5>
+					<p>
+						Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta. 
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun2()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<br>
+					<!-- End Funcion 2 -->
+					<!-- Funcion 3 -->
+					<h5>
+						Función 3
+					</h5>
+					<p>
+						Función: contador. Parámetros: Un arreglo de números. Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0's, y la cantidad de valores mayores a 0 en el arreglo.
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun3()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<br>
+					<!-- End Funcion 3 -->
+					<!-- Funcion 4 -->
+					<h5>
+						Función 4
+					</h5>
+					<p>
+						Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun4()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<br>
+					<!-- End Funcion 4 -->
+					<!-- Funcion 5 -->
+					<h5>
+						Función 5
+					</h5>
+					<p>
+						Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun5()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<br>
+					<!-- End Funcion 5 -->
+					<!-- Funcion 6 -->
+					<h5>
+						Función 6
+					</h5>
+					<p>
+						Hello
+					</p>
+					<button class="btn btn-purple text-primary"  id="launch" onclick="fun6()">
+						<i class="material-icons">
+							launch
+						</i>
+					</button>
+					<br>
+					<!-- End Funcion 6 -->
+				</div>
+				<!-- End Funciones -->
+
+				<!-- Preguntas -->
+				<div class="tab-pane" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">
+
+
+				</div>
+				<!-- End Preguntas -->
+			</div>
+			<!-- End de las tabs -->
+		</div>
+		<!-- END PAGE CONTENT -->
+
+		<!--------------------------------------------------------------------------------------->
+
+		<footer class="" id="myFooter">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Laboratorio 04</a></li>
+					<li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
+				</ol>
+			</nav>
+		</footer>
+
+		<!--------------------------------------------------------------------------------------->
+	</div>
+	<!-- END MAIN -->
+
+	<!------------------------------------------------------------------------------------------------------->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="resources/js/collapsedSidebar.js"></script>
+	<script src="resources/js/lab04.js"></script>
+
+	<!------------------------------------------------------------------------------------------------------->
+
+</body>
+</html> 

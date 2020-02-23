@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom SASS for this template -->
+  <link href="../../main.css" rel="stylesheet">
+  <link href="../resources/css/collapsedSidebar.css" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+<body >
+  <!-- Side Navbar -->
+  <div id="mySidebar" class="sidebar">
+    <div class="header">
+      <img src="../resources/images/profile.jpg" class="iconprofile">
+      <h5> Alberto Vázquez Plata</h5>
+    </div>
+    <a href="../lab01/lab01.html" class="btn-purple" id="lab01"><i class="material-icons">folder</i>Laboratorio 1</a>
+    <a href="#" class="btn-purple"><i class="material-icons">folder</i>Cuestionario 1</a>
+    <a href="../lab04/lab04.html" class="btn-purple" id="lab04"><i class="material-icons">folder</i>Laboratorio 4</a>
+    <a href="#" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 5</a>
+  </div>
+  <!-- End Side Navbar -->
+
+  <!--------------------------------------------------------------------------------------->
+
+  <!-- Page Content -->
+  <div id="main">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
+      <!-- Toogle Sidebar Button -->
+      <button class="btn btn-green" onclick="toogleNav()"><i class="material-icons text-primary">menu</i></button> 
+      <!-- End Toogle Sidebar Button -->
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="cuestionario-tab" data-toggle="tab" href="#cuestionario" role="tab" aria-controls="cuestionario" aria-selected="false">Cuestionario</a>
+        </li>
+      </ul>
+      <!-- End Nav tabs -->
+    </nav>
+    <!-- End Top Navbar -->
+
+    <!--------------------------------------------------------------------------------------->
+
+    <div class="container-fluid bg-info content">
+      <div class="tab-content">
+        <!--------------------------------------------------------------------------------------->
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h5>Hello there!</h5>
+          <p>Lo que más me gusta son los juegos de Nintendo, Dragon Ball, One Punch Man y atletismo</p>
+
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------------------->
+      <div class="tab-pane" id="cuestionario" role="tabpanel" aria-labelledby="cuestionario-tab">
+        <h5>URL</h5>
+        <p>También conocido como dirección web, un URL (Uniform Resource Locator) es una forma de URI (Uniform Resource Identifier) y una designación de convención estandarizada para direccionar documentos que se pueden acceder por el Internet. [12]</p>
+        <br>
+
+        
+      </div>
+      <!--------------------------------------------------------------------------------------->
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<footer class="fixed-bottom" id="myFooter">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Laboratorio 01</a></li>
+      <li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
+    </ol>
+  </nav>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="../resources/js/collapsedSidebar.js"></script>
+
+
+</body>
+</html> 
