@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom SASS for this template -->
+  <link href="../../main.css" rel="stylesheet">
+  <link href="../resources/css/collapsedSidebar.css" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+<body >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="mySidebar" class="sidebar">
+
+
+    <a href="#" class="btn-purple"><i class="material-icons">folder</i>Laboratorio 1</a>
+
+    
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="main">
+
+
+
+    <nav class="navbar navbar-expand-lg bg-primary border-bottom">
+
+      <button class="btn btn-green" onclick="toogleNav()"><i class="material-icons text-primary">menu</i></button> 
+
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+        </li>
+      </ul>
+
+      
+
+    </nav>
+
+
+    <div class="container-fluid bg-info text-light">
+
+
+
+
+
+
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">3</div>
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script>
+    function toogleNav() {
+      if(document.getElementById("mySidebar").style.width == "250px"){
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      else {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    }
+
+    function closeNav() {
+
+    }
+  </script>
+
+</body>
+</html> 

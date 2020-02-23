@@ -49,12 +49,13 @@ function fun3 (){
 
 function fun4(){
   const arr = prompt("Ingresa un arreglo de arreglo de números, separa los números con un espacio y los arreglos con un ;").split(";")
-  var promedios
+  var promedios = new Array()
   var cont = 0
   for(i=0;i<arr.length;i++){
     var aux = arr[i].split(" ") 
     for(j=0;j<aux.length;j++){
       cont = cont + aux[j]
+      console.log(aux[j]);
     }
     cont = cont / aux.length
     promedios.push(cont)

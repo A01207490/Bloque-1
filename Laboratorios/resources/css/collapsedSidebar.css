@@ -1,0 +1,157 @@
+:root { 
+  --primary:        #1e1f29; 
+  --secondary:      #20212b;
+  --info:           #282a36;
+  --green :         #69ff94;
+  --pink:           #ff79c6;
+  --yellow:         #e8ff81;
+  --purple:         #d6acff;
+  --peach:          #ffcc99;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--mirage);
+}
+
+.sidebar {
+  position:            fixed;
+  overflow-x:          hidden;
+  z-index:             1;
+  width:               250px;
+  top:                 0;
+  left:                0;
+  height:              100%; 
+  transition:          0.5s;
+  background-color:    var(--secondary);
+}
+
+.sidebar a {
+  display:             block;
+  transition:          0.5s;
+  padding-top:         10px;
+  padding-bottom:      10px;
+  padding-left:        20px;
+  padding-right:       20px;
+  font-size:           20px;
+  font-weight:         bold;
+  text-decoration:     none;
+  color:               var(--peach);
+  background-color:    var(--secondary);
+  border-bottom-style: solid;
+  border-color:        var(--purple);
+  border-width:        2px;
+}
+
+.sidebar i {
+  padding-right:    10px;
+  font-size:        20px;
+  color:            var(--purple);
+}
+
+img.iconprofile {
+  height:              100px;
+  width:               100px;
+  display:             block;
+  border-radius:       50%;
+  margin-left:         auto;
+  margin-right:        auto;
+  margin-bottom:       20px;
+  border-bottom-style: dotted;
+  border-color:        var(--green);
+  border-width:        5px;
+}
+
+.header{
+  padding-top:         20px;
+  border-bottom-style: solid;
+  border-color:        var(--green);
+  border-width:        5px;
+  background-image:    url("../images/botw.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+
+}
+
+
+.header h5{
+  color:               var(--yellow);
+  font-size:           16px;
+  font-weight:         bold;
+  text-align:          center;
+  
+}
+
+.p ul {
+  color:            var(--green);
+  font-size:        20px;
+  font-weight:      bold;
+}
+
+
+#myTab {
+  margin-left:      20px;
+  margin-right:     20px;
+
+}
+
+.navbar{
+  padding-right:    40px;
+  padding-left:     40px;
+  padding-top:      10px;
+  padding-bottom:   10px;
+  z-index: 10;
+}
+
+.container-fluid{
+  z-index: 5;
+}
+
+.nav-item a {
+  color:            var(--light);
+  font-weight:      bold;
+  font-size:        20px;
+  border-style:     none
+}
+
+.tab-pane {
+  padding-top:      30px;
+  padding-bottom:   30px;
+  padding-left:     20px;
+  padding-right:    20px;
+}
+
+.tab-pane p {
+  color:            var(--green);
+  font-size:        20px;
+  font-weight:      bold;
+}
+
+.tab-pane h5 {
+  color:            var(--purple);
+  font-weight:      bold;
+  font-size:        20px;
+}
+
+
+
+#main {
+  transition:    margin-left .5s;
+  margin-left:   250px
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

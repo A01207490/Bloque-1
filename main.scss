@@ -13,72 +13,39 @@ $Periwinkle:     #D0E1F9;
 $light:          #FFFFFF;
 $dark:           #000000;
 
-$spring_green:   #89DA59;
-$stem:           #80BD9D;
-$petal:          #F98866;
-i.icon-light {
-  color:         $light;
-}
+$spring_green:         #69ff94;
+$spring_green_light:   rgb(196, 243, 169);
+$spring_green_dark:    rgb(56, 141, 6);
+$stem:                 #80BD9D;
+$petal:                #F98866;
+
+$mirage:                 #1e1f29;
+$baltic_sea:             #20212b;
+$charade:                #282a36;
+$spring_green:           #69ff94;
+$persian_pink:           #ff79c6;
+$honey_sucle:            #e8ff81;
+$mauve:                  #d6acff;
+$peach:                  #ffcc99;
+
 
 $theme-colors: (
-  "primary":     $stone,
-  "secondary":   $stem,
-  "info":        $spring_green,
-  "light":       $light,
-  "dark":        $light
+  "primary":     $mirage,
+  "secondary":   $baltic_sea,
+  "info":        $charade,
+  "green":       $spring_green,
+  "pink":        $persian_pink,
+  "yellow":      $honey_sucle,
+  "purple":      $mauve,
+  "peach":       $peach
 );
 
-body {
-    overflow-x: hidden;
-  }
+img.iconprofile {
+  height: 50px;
+  width: 50px;
+  display: block;
+  border-radius: 50%;
+}
   
-  #sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-  }
-  
-  #sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
-    font-size: 1.2rem;
-  }
-  
-  #sidebar-wrapper .list-group {
-    width: 15rem;
-  }
-  
-  #page-content-wrapper {
-    min-width: 100vw;
-  }
-  
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: 0;
-  }@import "node_modules/bootstrap/scss/bootstrap";
-
-  
-  @media (min-width: 768px) {
-    #sidebar-wrapper {
-      margin-left: 0;
-    }
-  
-    #page-content-wrapper {
-      min-width: 0;
-      width: 100%;
-    }
-  
-    #wrapper.toggled #sidebar-wrapper {
-      margin-left: -15rem;
-    }
-  }
-
-
-
-
-
-// Custom.scss
-
 // Option A: Include all of Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
