@@ -68,22 +68,33 @@ function fun5(){
   window.alert("El número con sus dígitos en orden inverso es: " + num.split('').reverse().join(''));
 }
 
-function fun6(){
 
-  var myCar = new Car("Camaro", "Convertible", 1996, "Beto");
 
-  myCar.displayCar();
 
-  function Car(make, model, year, owner) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.owner = owner;
-    this.displayCar = displayCar;
-  }
 
-  function displayCar() {
-    window.alert(`A Beautiful ${this.year} ${this.make} ${this.model}`);
-  }
 
+
+
+
+var myCar = new Car("camaro", 80)
+
+function accelerate(){
+  myCar.speed = myCar.speed  + 1
+  myCar.upDate();
+}
+
+function slowDown(){
+  myCar.speed = myCar.speed  - 1
+  myCar.upDate();
+}
+
+function Car(name, speed) {
+  this.name = name;
+  this.speed = speed;
+  this.upDate = upDate;
+}
+
+function upDate(){
+  
+  document.getElementById("carSpeed").innerHTML = this.speed;
 }
