@@ -95,6 +95,5 @@ function Car(name, speed) {
 }
 
 function upDate(){
-  
   document.getElementById("carSpeed").innerHTML = this.speed;
 }
