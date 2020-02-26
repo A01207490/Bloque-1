@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Custom SASS for this template -->
+	<link href="../main.css" rel="stylesheet">
+	<link href="resources/css/collapsedSidebar.css" rel="stylesheet">
+	<link href="resources/css/lab05.css" rel="stylesheet">
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Laboratorio 05</title>
+</head>
+<body >
+	<!------------------------------------------------------------------------------------------------------->
+	
+	<!-- Side Navbar -->
+	<div id="mySidebar" class="sidebar">
+	</div>
+	<!-- End Side Navbar -->
+
+	<!------------------------------------------------------------------------------------------------------->
+
+	<!-- MAIN -->
+	<div id="main">
+		<!--------------------------------------------------------------------------------------->
+
+		<!-- TOP NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
+			<!-- Toogle Sidebar Button -->
+			<button class="btn btn-green" onclick="toogleNav()"><i class="material-icons text-primary">menu</i></button> 
+			<!-- End Toogle Sidebar Button -->
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="contraseña-tab" data-toggle="tab" href="#contraseña" role="tab" aria-controls="contraseña" aria-selected="true">Contraseña</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Cuestionario</a>
+				</li>
+			</ul>
+			<!-- End Nav tabs -->
+		</nav>
+		<!-- END TOP NAVBAR -->
+
+		<!--------------------------------------------------------------------------------------->
+
+		<!-- PAGE CONTENT -->
+		<div class="container-fluid bg-info content">
+			<!-- Contenido de las tabs -->
+			<div class="tab-content">
+				<!-- Contraseña -->
+				<div class="tab-pane active" id="contraseña" role="tabpanel" aria-labelledby="contraseña-tab">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm">
+								<div class="d-flex flex-row justify-content-center align-items-center">
+									<div class="p-2">
+										<form>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Email address</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+												<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Password</label>
+												<input type="password" class="form-control" id="inputPassword" placeholder="Password" value="FakePSW">
+											</div>
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="exampleCheck1">
+												<label class="form-check-label" for="exampleCheck1">Check me out</label>
+											</div>
+											<button type="button" class="btn btn-primary" onclick="validatePassword()">Submit</button>
+											<div>
+												<p id="requisitoMayuscula">
+													
+												</p>
+												<p id="requisitoMinuscula">
+													
+												</p>
+												<p id="requisitoDigito">
+													
+												</p>
+												<p id="requisitoLongitud">
+													 	
+												</p>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Contraseña -->
+				<!-- Preguntas -->
+				<div class="tab-pane" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+					Hello
+				</div>
+				<!-- End Preguntas -->
+			</div>
+			<!-- End de las tabs -->
+		</div>
+		<!-- END PAGE CONTENT -->
+
+		<!--------------------------------------------------------------------------------------->
+
+		<!-- Footer -->
+
+		<footer class="fixed-bottom" id="myFooter">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#" id="dir"></a></li>
+					<li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
+				</ol>
+			</nav>
+		</footer>
+
+		<!-- End Footer -->
+
+		<!--------------------------------------------------------------------------------------->
+	</div>
+	<!-- END MAIN -->
+
+	<!------------------------------------------------------------------------------------------------------->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="resources/js/collapsedSidebar.js"></script>
+	<script src="resources/js/lab04.js"></script>
+	<script src="resources/js/injectSideBar.js"></script>
+	<script src="resources/js/lab05.js"></script>
+	<!------------------------------------------------------------------------------------------------------->
+
+</body>
+</html> 

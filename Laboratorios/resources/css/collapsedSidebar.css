@@ -12,6 +12,7 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: var(--mirage);
+  margin-bottom: 80px;
 }
 
 .sidebar {
@@ -105,6 +106,7 @@ img.iconprofile {
   border-top-style: solid;
   border-color:     var(--yellow);
   border-width:     5px;
+
 }
 
 .breadcrumb {

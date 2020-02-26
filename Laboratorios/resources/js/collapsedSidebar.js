@@ -30,3 +30,6 @@ setText.text(initText);
 $('.nav-tabs li a').on('click', function () {
   setText.text($(this).text());
 });
+
+
+document.getElementById("dir").innerHTML = document.title;

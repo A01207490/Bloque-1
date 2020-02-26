@@ -1,0 +1,18 @@
+:root { 
+  --primary:        #1e1f29; 
+  --secondary:      #20212b;
+  --info:           #282a36;
+  --green :         #69ff94;
+  --pink:           #ff79c6;
+  --yellow:         #e8ff81;
+  --purple:         #d6acff;
+  --peach:          #ffcc99;
+}
+
+.invalid{
+	color: var(--yellow);;
+}
+
+.valid{
+	color: var(--green);;
+}
