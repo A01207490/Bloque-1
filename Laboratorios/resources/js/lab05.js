@@ -38,82 +38,63 @@ function validatePassword(){
 }
 
 function fun2 (){
-  const currentTime = Date.now()
-  const num1 = Math.floor(Math.random() * 10)
-  const num2 = Math.floor(Math.random() * 10)
-  const numSum = prompt("Cuánto es " + num1.toString() + " + " + num2.toString() + "?")
-  if(numSum == (num1 + num2)){
-    window.alert("Correcto\nTiempo de respuesta: " + (Date.now()-currentTime)/1000 + " s");
-  }else{
-    window.alert("Incorrecto\nTiempo de respuesta: " + (Date.now()-currentTime)/1000 + " s");
+
+
+}
+
+
+
+
+
+function add(){
+  this.quantity = this.quantity + 1;
+  console.log(this.quantity);
   }
+
+function substract(){
+  if(this.quantity >= 1) this.quantity = this.quantity - 1;
+  console.log(this.quantity);
 }
 
-function fun3 (){
-  var positive = 0
-  var zeros = 0
-  var negative = 0
-  const arr = prompt("Ingresa tus números separados por una coma").split(",")
-  for(i=1;i<=arr.length;i++){
-    if(arr[i] < 0){
-      negative = negative + 1
-    }else if (arr[i] == 0){
-      zeros = zeros + 1
-    } else {
-      positive = positive + 1
-    }
-  }
-  window.alert("Numeros positivos: " + positive + "\n" + "Numeros negativos: " + negative + "\n" + "Ceros: " + zeros);
-}
-
-function fun4(){
-  const arr = prompt("Ingresa un arreglo de arreglo de números, separa los números con una coma y los arreglos con un ;").split(";");
-  var promedios = new Array();
-  var cont = 0;
-  for(i=0;i<arr.length;i++){
-    var aux = arr[i].split(","); 
-    for(j=0;j<aux.length;j++){
-      cont = cont + parseInt(aux[j], 10);
-      console.log(cont);
-    }
-    cont = cont / aux.length;
-    promedios.push(cont);
-    cont = 0;
-  }
-  window.alert("Los promedios respectivos fueron: " + promedios.toString());
-}
-
-function fun5(){
-  var num = prompt("Ingresa un número: ");
-  window.alert("El número con sus dígitos en orden inverso es: " + num.split('').reverse().join(''));
-}
-
-
-
-
-
-
-
-
-
-var myCar = new Car("camaro", 80)
-
-function accelerate(){
-  myCar.speed = myCar.speed  + 1
-  myCar.upDate();
-}
-
-function slowDown(){
-  myCar.speed = myCar.speed  - 1
-  myCar.upDate();
-}
-
-function Car(name, speed) {
+function Potion(name, price, quantity) {
   this.name = name;
-  this.speed = speed;
-  this.upDate = upDate;
+  this.price = price;
+  this.quantity = quantity;
+  this.add = add;
+  this.substract = substract;
 }
 
-function upDate(){
-  document.getElementById("carSpeed").innerHTML = this.speed;
-}
+var red = new Potion("redPotion", 80, 0);
+var green = new Potion("greenPotion", 40, 0);
+var blue = new Potion("bluePotion", 60, 0);
+
+
+
+document.getElementById("addRed").onclick = function addRed(){ 
+  red.add();
+  document.getElementById("redPotion").innerHTML = red.quantity;
+};
+document.getElementById("substractRed").onclick = function substractRed(){ 
+  red.substract();
+  document.getElementById("redPotion").innerHTML = red.quantity;
+};
+
+
+document.getElementById("addGreen").onclick = function addGreen(){ 
+  green.add();
+  document.getElementById("greenPotion").innerHTML = green.quantity;
+};
+document.getElementById("substractGreen").onclick = function substractGreen(){ 
+  green.substract();
+  document.getElementById("greenPotion").innerHTML = green.quantity;
+};
+
+
+document.getElementById("addBlue").onclick = function addBlue(){ 
+  blue.add();
+  document.getElementById("bluePotion").innerHTML = blue.quantity;
+};
+document.getElementById("substractBlue").onclick = function substractBlue(){ 
+  blue.substract();
+  document.getElementById("bluePotion").innerHTML = blue.quantity;
+};

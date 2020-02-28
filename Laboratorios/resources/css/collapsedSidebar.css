@@ -11,7 +11,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: var(--mirage);
+  background-color: var(--info);
   margin-bottom: 80px;
 }
 
@@ -194,4 +194,7 @@ img.iconprofile {
   display:          inline-block;
 }
 
-
+.myButton{
+  font-weight:      bold;
+  font-size:        14px;
+}
