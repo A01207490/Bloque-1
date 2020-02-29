@@ -42,7 +42,7 @@ function add(){
   this.quantity = this.quantity + 1;
   this.cost = this.quantity * this.price;
   console.log(this.quantity);
-  }
+}
 
 function substract(){
   if(this.quantity >= 1) {
@@ -113,3 +113,22 @@ document.getElementById("substractBlue").onclick = function substractBlue(){
 };
 
 
+
+var wordBank = ["zelda", "metroid", "mario", "saitama", "gohan", "samus", "link"];
+
+var word = document.getElementById("word");
+var enterWord = document.getElementById("enterWord");
+
+word.innerHTML = wordBank[Math.floor(Math.random() * wordBank.length)];
+
+
+enterWord.onkeyup = function(){
+  console.log(word.textContent);
+  console.log(enterWord.value);
+  console.log(word.textContent == enterWord.value);
+  if(word.textContent == enterWord.value){
+    word.innerHTML = wordBank[Math.floor(Math.random() * wordBank.length)];
+    enterWord.value= "";
+    enterWord.innerHTML= "";
+  }
+}

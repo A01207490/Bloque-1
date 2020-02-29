@@ -137,7 +137,7 @@ img.iconprofile {
   color:            var(--yellow);
 }
 
-.container-fluid{
+.container{
   z-index: 5;
   color:            var(--green);
   font-size:        18px;

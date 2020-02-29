@@ -38,7 +38,10 @@
 					<a class="nav-link" id="contraseña-tab" data-toggle="tab" href="#contraseña" role="tab" aria-controls="contraseña" aria-selected="true">Contraseña</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Productos</a>
+					<a class="nav-link" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="writer-tab" data-toggle="tab" href="#writer" role="tab" aria-controls="writer" aria-selected="false">Writer</a>
 				</li>
 			</ul>
 			<!-- End Nav tabs -->
@@ -96,7 +99,7 @@
 				</div>
 				<!-- End Contraseña -->
 				<!-- Productos -->
-				<div class="tab-pane active" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+				<div class="tab-pane" id="productos" role="tabpanel" aria-labelledby="productos-tab">
 					<!-- Container -->
 					<div class="container">
 						<!-- Table -->
@@ -225,8 +228,17 @@
 
 
 				<!-- Preguntas -->
-				<div class="tab-pane" id="productos" role="tabpanel" aria-labelledby="productos-tab">
-					Hello
+				<div class="tab-pane active" id="writer" role="tabpanel" aria-labelledby="writer-tab">
+					<!-- Container -->
+					<div class="container">
+						<form>
+							<div class="form-group">
+								<label for="enterWord" id="word">Word</label>
+								<input type="text" class="form-control" id="enterWord" placeholder="Enter word" size="3" value="">
+							</div>
+						</form>
+					</div>
+					<!-- End Container -->
 				</div>
 				<!-- End Preguntas -->
 			</div>
