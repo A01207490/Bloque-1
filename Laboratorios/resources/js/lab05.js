@@ -37,22 +37,18 @@ function validatePassword(){
   return false;
 }
 
-function fun2 (){
-
-
-}
-
-
-
-
 
 function add(){
   this.quantity = this.quantity + 1;
+  this.cost = this.quantity * this.price;
   console.log(this.quantity);
   }
 
 function substract(){
-  if(this.quantity >= 1) this.quantity = this.quantity - 1;
+  if(this.quantity >= 1) {
+    this.quantity = this.quantity - 1;
+    this.cost = this.quantity * this.price;
+  }
   console.log(this.quantity);
 }
 
@@ -60,41 +56,60 @@ function Potion(name, price, quantity) {
   this.name = name;
   this.price = price;
   this.quantity = quantity;
+  this.cost = quantity * price;
   this.add = add;
   this.substract = substract;
 }
 
+
 var red = new Potion("redPotion", 80, 0);
 var green = new Potion("greenPotion", 40, 0);
 var blue = new Potion("bluePotion", 60, 0);
+
+function update(){
+  var subtotal = document.getElementById("subtotal");
+  var iva = document.getElementById("iva");
+  var total = document.getElementById("total"); 
+  subtotal.innerHTML = red.cost + green.cost + blue.cost; 
+  iva.innerHTML = 0.16 * (red.cost + green.cost + blue.cost); 
+  total.innerHTML = 1.16 * (red.cost + green.cost + blue.cost); 
+}
 
 
 
 document.getElementById("addRed").onclick = function addRed(){ 
   red.add();
   document.getElementById("redPotion").innerHTML = red.quantity;
+  update();
 };
 document.getElementById("substractRed").onclick = function substractRed(){ 
   red.substract();
   document.getElementById("redPotion").innerHTML = red.quantity;
+  update();
 };
 
 
 document.getElementById("addGreen").onclick = function addGreen(){ 
   green.add();
   document.getElementById("greenPotion").innerHTML = green.quantity;
+  update();
 };
 document.getElementById("substractGreen").onclick = function substractGreen(){ 
   green.substract();
   document.getElementById("greenPotion").innerHTML = green.quantity;
+  update();
 };
 
 
 document.getElementById("addBlue").onclick = function addBlue(){ 
   blue.add();
   document.getElementById("bluePotion").innerHTML = blue.quantity;
+  update();
 };
 document.getElementById("substractBlue").onclick = function substractBlue(){ 
   blue.substract();
   document.getElementById("bluePotion").innerHTML = blue.quantity;
+  update();
 };
+
+

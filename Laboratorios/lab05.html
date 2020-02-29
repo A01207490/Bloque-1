@@ -35,10 +35,10 @@
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-					<a class="nav-link active" id="contraseña-tab" data-toggle="tab" href="#contraseña" role="tab" aria-controls="contraseña" aria-selected="true">Contraseña</a>
+					<a class="nav-link" id="contraseña-tab" data-toggle="tab" href="#contraseña" role="tab" aria-controls="contraseña" aria-selected="true">Contraseña</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Cuestionario</a>
+					<a class="nav-link active" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Productos</a>
 				</li>
 			</ul>
 			<!-- End Nav tabs -->
@@ -52,7 +52,7 @@
 			<!-- Contenido de las tabs -->
 			<div class="tab-content">
 				<!-- Contraseña -->
-				<div class="tab-pane active" id="contraseña" role="tabpanel" aria-labelledby="contraseña-tab">
+				<div class="tab-pane" id="contraseña" role="tabpanel" aria-labelledby="contraseña-tab">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm">
@@ -96,7 +96,7 @@
 				</div>
 				<!-- End Contraseña -->
 				<!-- Productos -->
-				<div class="tab-pane" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+				<div class="tab-pane active" id="productos" role="tabpanel" aria-labelledby="productos-tab">
 					<!-- Container -->
 					<div class="container">
 						<!-- Table -->
@@ -197,12 +197,33 @@
 								</td>
 							</tr>
 							<!-- End Blue Potion -->
+							<!-- Subtotal -->
+							<tr>
+								<th class="text-right" colspan="2">Subtotal</th>
+								<th id="subtotal">0</th>
+							</tr>
+							<!-- End Subtotal -->
+							<!-- IVA -->
+							<tr>
+								<th class="text-right" colspan="2">IVA</th>
+								<th id="iva">0</th>
+							</tr>
+							<!-- End IVA -->
+							<!-- Total -->
+							<tr>
+								<th class="text-right" colspan="2">Subtotal</th>
+								<th id="total">0</th>
+							</tr>
+							<!-- End Total -->
 						</table> 
 						<!-- End Table -->
 					</div>
 					<!-- Container -->
 				</div>
 				<!-- End Productos -->
+
+
+
 				<!-- Preguntas -->
 				<div class="tab-pane" id="productos" role="tabpanel" aria-labelledby="productos-tab">
 					Hello
