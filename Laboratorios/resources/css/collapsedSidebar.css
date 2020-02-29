@@ -7,6 +7,8 @@
   --yellow:         #e8ff81;
   --purple:         #d6acff;
   --peach:          #ffcc99;
+  --blue:           #D0E1F9;
+  --midnight_blue:  #1E1F26;
 }
 
 body {
@@ -15,73 +17,136 @@ body {
   margin-bottom: 80px;
 }
 
-.sidebar {
+#mySidebar {
   position:            fixed;
   overflow-x:          hidden;
   z-index:             1;
   width:               250px;
-  top:                 0;
-  left:                0;
   height:              100%; 
   transition:          0.5s;
+}
+
+
+
+
+
+
+
+#myDirectories{
+  height:              100%; 
   background-color:    var(--secondary);
 }
 
-.sidebar a {
-  display:             block;
-  transition:          0.5s;
-  padding-top:         10px;
-  padding-bottom:      10px;
-  padding-left:        20px;
-  padding-right:       20px;
-  font-size:           18px;
+
+
+#myDirectories a {
   font-weight:         bold;
   text-decoration:     none;
   color:               var(--peach);
-  background-color:    var(--secondary);
-  border-bottom-style: solid;
-  border-color:        var(--purple);
-  border-width:        1px;
+
 }
 
-.sidebar i {
-  padding-right:    10px;
-  font-size:        18px;
-  color:            var(--purple);
+#myDirectories h5{
+  font-size:           16px;
+  display:             inline;
 }
+
+#myDirectories i {
+  padding-right:       10px;
+  color:               var(--purple);
+  font-size:           16px;
+}
+
+
+
+
+
+
+
+
 
 img.iconprofile {
-  height:              75px;
-  width:               75px;
+  margin:              0px 0px 0px 10px;
+  height:              70px;
+  width:               70px;
   display:             block;
-  border-radius:       50%;
-  margin-left:         auto;
-  margin-right:        auto;
-  margin-bottom:       20px;
-  border-bottom-style: dotted;
-  border-color:        var(--green);
-  border-width:        5px;
+  border-radius:       10%;
+  border-style: solid;
+  border-color:        var(--peach);
+  border-width:        3px;
 }
 
-.header{
-  padding-top:         20px;
+#myHeader{
   border-bottom-style: solid;
-  border-color:        var(--green);
-  border-width:        5px;
-  background-image:    url("../images/splatoon2.jpg");
-  background-size:     cover;
-  background-repeat:   no-repeat;
+  border-color:        var(--info);
+  border-width:        2px;
+  background-color: var(--primary);
 
 }
 
+#myHeader a {
+  font-size:           10px;
+  text-decoration:     none;
+  padding:             0px 3px 0px 3px;
+  margin:              0px 3px 0px 3px;
+}
 
-.header h5{
-  color:               var(--primary);
-  font-size:           16px;
+#myHeader i {
+  display: inline;
+  margin:             0px 0px 0px 0px;
+  padding:            0px 5px 0px 0px;
+  font-size:           18px;
   font-weight:         bold;
-  text-align:          center;
+  text-decoration:     none;
+  color:               var(--green);
+}
+
+#myHeader h5{
+  display:             inline;
+  color:               var(--blue);
+  font-size:           14px;
+  font-weight:         bold;
+  padding:             0px 0px 0px 0px;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #myTab {
@@ -102,10 +167,8 @@ img.iconprofile {
   padding-right:    40px;
   padding-left:     40px;
   padding-top:      10px;
-  background-color: var(--secondary);
-  border-top-style: solid;
-  border-color:     var(--yellow);
-  border-width:     5px;
+  background-color: var(--primary);
+
 
 }
 
@@ -113,13 +176,13 @@ img.iconprofile {
   padding-right:    auto;
   padding-left:     auto;
   width:            auto;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .breadcrumb li{
-  color:            var(--pink);
-  font-weight:      bold;
-  font-size:        18px;
+  color:               var(--pink);
+  font-weight:         bold;
+  font-size:           16px;
   border-bottom-style: solid;
   border-color:        var(--green);
   border-width:        2px;
@@ -128,7 +191,7 @@ img.iconprofile {
 .breadcrumb a{
   color:            var(--pink);
   font-weight:      bold;
-  font-size:        18px;
+  font-size:        16px;
 
 
 }
@@ -140,14 +203,14 @@ img.iconprofile {
 .container{
   z-index: 5;
   color:            var(--green);
-  font-size:        18px;
+  font-size:        16px;
   font-weight:      bold;
 }
 
 .nav-item a {
   color:            var(--light);
   font-weight:      bold;
-  font-size:        18px;
+  font-size:        16px;
   border-style:     none
 }
 
@@ -162,14 +225,15 @@ img.iconprofile {
 .tab-pane h5 {
   color:            var(--purple);
   font-weight:      bold;
-  font-size:        18px;
+  font-size:        16px;
 }
 
 
 
 #main {
   transition:    margin-left .5s;
-  margin-left:   250px
+  margin-left:         250px;
+  height:              100%; 
 
 }
 
