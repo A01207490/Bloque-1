@@ -41,8 +41,14 @@
 					<a class="nav-link" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Productos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" id="writer-tab" data-toggle="tab" href="#writer" role="tab" aria-controls="writer" aria-selected="false">Writer</a>
+					<a class="nav-link" id="writer-tab" data-toggle="tab" href="#writer" role="tab" aria-controls="writer" aria-selected="false">Writer</a>
 				</li>
+
+				<li class="nav-item">
+					<a class="nav-link active" id="preguntas-tab" data-toggle="tab" href="#preguntas" role="tab" aria-controls="preguntas" aria-selected="false">Preguntas</a>
+				</li>
+
+
 			</ul>
 			<!-- End Nav tabs -->
 		</nav>
@@ -227,8 +233,8 @@
 
 
 
-				<!-- Preguntas -->
-				<div class="tab-pane active" id="writer" role="tabpanel" aria-labelledby="writer-tab">
+				<!-- Writer -->
+				<div class="tab-pane" id="writer" role="tabpanel" aria-labelledby="writer-tab">
 					<!-- Container -->
 					<div class="container">
 						<form>
@@ -240,7 +246,64 @@
 					</div>
 					<!-- End Container -->
 				</div>
+				<!-- End Writer -->
+
+				<!-- Preguntas -->
+				<div class="tab-pane active" id="preguntas" role="tabpanel" aria-labelledby="preguntas-tab">
+					<!-- Container -->
+					<div class="container">
+						<form>
+							<div class="form-group">
+								<h5>
+									¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+								</h5>
+								<p>
+									<ul>
+										<li>
+											Para asegurarse de que se están llenando todos los campos mandatorios.[1]
+										</li>
+										<li>
+											Para revisar que los valores de los campos sean del tipo correcto. [1]
+										</li>
+									</ul>
+								</p>
+								
+								<h5>
+									¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+								</h5>
+								<p>
+									Se puede utilizar software como Burp para realizar esto; se puede ingresar un valor benévolo en el input del browser, interceptar la forma con tu proxy, y modificar la información al valor deseado. [2]
+								</p>
+
+								<h5>
+									Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+
+								</h5>
+								<p>
+									Para evitar conflitos de información con usuarios cuya intención no es comprometer el sistema.
+								</p>
+
+								<h5>
+									Referencias.
+								</h5>
+								<p>
+									<ul>
+										<li>
+											[1] https://www.tutorialspoint.com/javascript/javascript_form_validations.htm
+										</li>
+										<li>
+											[2] https://portswigger.net/support/using-burp-to-bypass-client-side-javascript-validation
+										</li>
+									</ul>
+								</p>
+							</div>
+						</form>
+					</div>
+					<!-- End Container -->
+				</div>
 				<!-- End Preguntas -->
+
+
 			</div>
 			<!-- End de las tabs -->
 		</div>
