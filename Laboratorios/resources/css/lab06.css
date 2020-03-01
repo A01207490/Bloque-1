@@ -1,0 +1,12 @@
+#carousel {
+	position: absolute;
+	opacity:0.4;
+	z-index:6;
+}
+#text {
+	position: relative;
+	z-index:7;
+}
+
+
+

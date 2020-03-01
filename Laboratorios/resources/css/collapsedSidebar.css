@@ -20,7 +20,7 @@ body {
 #mySidebar {
   position:            fixed;
   overflow-x:          hidden;
-  z-index:             1;
+  z-index:             9;
   width:               250px;
   height:              100%; 
   transition:          0.5s;
@@ -201,7 +201,6 @@ img.iconprofile {
 }
 
 .container{
-  z-index: 5;
   color:            var(--green);
   font-size:        16px;
   font-weight:      bold;
