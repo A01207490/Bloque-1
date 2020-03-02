@@ -12,3 +12,37 @@
 	font-family: "Shlop", Times, serif;
 	font-size: 120px;
 }
+.cart {
+	overflow: hidden;
+	padding: 10px 3px;
+}
+
+#div1 {
+	width: 320px;
+	height: 180px;
+	border: 1px solid #aaaaaa;
+	background-image: url("../images/metroidb.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#div2 {
+	width: 320px;
+	height: 180px;
+	border: 1px solid #aaaaaa;
+	background-image: url("../images/kame.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#div3 {
+	width: 320px;
+	height: 180px;
+	border: 1px solid #aaaaaa;
+	background-image: url("../images/zeldab.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -39,10 +39,18 @@
 					<a class="nav-link" id="watermark-tab" data-toggle="tab" href="#watermark" role="tab" aria-controls="watermark" aria-selected="true">Watermark</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" id="estilo-tab" data-toggle="tab" href="#estilo" role="tab" aria-controls="estilo" aria-selected="false">Productos</a>
+					<a class="nav-link" id="estilo-tab" data-toggle="tab" href="#estilo" role="tab" aria-controls="estilo" aria-selected="false">Style</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="writer-tab" data-toggle="tab" href="#writer" role="tab" aria-controls="writer" aria-selected="false">Writer</a>
+					<a class="nav-link " id="helpbtn-tab" data-toggle="tab" href="#helpbtn" role="tab" aria-controls="helpbtn" aria-selected="false">Dynamic Help Btn</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link " id="timer-tab" data-toggle="tab" href="#timer" role="tab" aria-controls="timer" aria-selected="false">Writer with timer</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link active" id="drag-tab" data-toggle="tab" href="#drag" role="tab" aria-controls="drag" aria-selected="false">Drag and Drop</a>
 				</li>
 
 				<li class="nav-item">
@@ -61,6 +69,7 @@
 		<div class="container-fluid bg-info content">
 			<!-- Contenido de las tabs -->
 			<div class="tab-content">
+
 				<!-- Watermark -->
 				<div class="tab-pane" id="watermark" role="tabpanel" aria-labelledby="watermark-tab">
 					<div class="container">
@@ -107,10 +116,10 @@
 				</div>
 				<!-- End Watermark -->
 
-
+				<!--------------------------------------------------------------------------------------->
 
 				<!-- Estilo -->
-				<div class="tab-pane active" id="estilo" role="tabpanel" aria-labelledby="estilo-tab">
+				<div class="tab-pane" id="estilo" role="tabpanel" aria-labelledby="estilo-tab">
 					<!-- Container -->
 					<div class="container">
 						<div class="row">
@@ -126,41 +135,165 @@
 					<!-- Container -->
 				</div>
 				<!-- End Estilo -->
+				
+				<!--------------------------------------------------------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!-- Writer -->
-				<div class="tab-pane" id="writer" role="tabpanel" aria-labelledby="writer-tab">
+				<!-- Writer with help button -->
+				<div class="tab-pane" id="helpbtn" role="tabpanel" aria-labelledby="helpbtn-tab">
 					<!-- Container -->
 					<div class="container">
 						<form>
 							<div class="form-group">
-								<label for="enterWord" id="word">Word</label>
-								<input type="text" class="form-control" id="enterWord" placeholder="Enter word" size="3" value="">
+								<!-- Word and Help button -->
+								<div class="row">
+									<div class="col-sm">
+										<div class="d-flex flex-row justify-content-start align-items-end">
+											<div class="p-2">
+												<label for="enterWord" id="">word</label>
+											</div>
+											<div class="p-2">
+												<a data-toggle="tooltip" title="Write the word asap" data-placement="right">
+													<i class="material-icons">
+														help
+													</i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Word and Help button -->
+								<!-- Input Word -->
+								<div class="row">
+									<div class="col-sm">
+										<div class="d-flex flex-row justify-content-start align-items-end">
+											<div class="p-2">
+												<input type="text" class="form-control" id="" placeholder="Enter word" size="20" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Input Word -->
 							</div>
 						</form>
 					</div>
 					<!-- End Container -->
 				</div>
-				<!-- End Writer -->
+				<!-- End Writer with help button -->
+
+				<!--------------------------------------------------------------------------------------->
+
+				<!-- Writer with timer -->
+				<div class="tab-pane " id="timer" role="tabpanel" aria-labelledby="timer-tab">
+					<!-- Container -->
+					<div class="container">
+						<form>
+							<div class="form-group">
+								<!-- Word, Timer and Help button -->
+								<div class="row">
+									<div class="col-sm">
+										<div class="d-flex flex-row justify-content-start align-items-center" style="height: 30px">
+											
+											<div class="p-2">
+												<label for="enterWord" id="word">word</label>
+											</div>
+
+
+
+											<div class="p-2">
+												<a data-toggle="tooltip" title="Write the word before the time ends" data-placement="right">
+													<i class="material-icons">
+														help
+													</i>
+												</a>
+											</div>
+
+											<div class="p-2">
+												<p id="demo">
+
+												</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<!-- End Word and Help button -->
+								<!-- Input Word -->
+								<div class="row">
+									<div class="col-sm">
+										<div class="d-flex flex-row justify-content-start align-items-center">
+											<div class="p-2">
+												<input type="text" class="form-control" id="enterWord" placeholder="Enter word" size="20" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Input Word -->
+							</div>
+						</form>
+					</div>
+					<!-- End Container -->
+				</div>
+				<!-- End Writer with timer -->
+
+				<!--------------------------------------------------------------------------------------->
+
+				<!-- Preguntas -->
+				<div class="tab-pane active" id="drag" role="tabpanel" aria-labelledby="drag-tab">
+					<!-- Container -->
+					<div class="container">
+
+						<div class="row">
+							<div class="col-sm">
+								<div class="d-flex flex-row justify-content-center align-items-center" style="height: 60px">
+
+									<div class="m-0">
+										<h5>Drag the character into the correct background</h5>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row" style="height: 180px">
+							<div class="col-sm">
+								<div class="d-flex flex-row justify-content-around align-items-center" >
+
+									
+									<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event, this)">
+									</div>
+									<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event, this)">
+									</div>
+									<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event, this)">
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm">
+								<div class="d-flex flex-row justify-content-around align-items-center " >
+
+									<div class="p-3">
+										<img id="drag1" src="resources/images/samus2.png" draggable="true" ondragstart="drag(event)"  height="180">
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						
+						
+						
+
+
+					</div>
+					<!-- End Container -->
+				</div>
+				<!-- End Preguntas -->
+
+				<!--------------------------------------------------------------------------------------->
 
 				<!-- Preguntas -->
 				<div class="tab-pane" id="preguntas" role="tabpanel" aria-labelledby="preguntas-tab">
@@ -169,32 +302,25 @@
 						<form>
 							<div class="form-group">
 								<h5>
-									¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+									¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
 								</h5>
 								<p>
-									<ul>
-										<li>
-											Para asegurarse de que se están llenando todos los campos mandatorios.[1]
-										</li>
-										<li>
-											Para revisar que los valores de los campos sean del tipo correcto. [1]
-										</li>
-									</ul>
+									
 								</p>
 
 								<h5>
-									¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+									¿Cuáles son los valores estándar para la propiedad visibility?
 								</h5>
 								<p>
-									Se puede utilizar software como Burp para realizar esto; se puede ingresar un valor benévolo en el input del browser, interceptar la forma con tu proxy, y modificar la información al valor deseado. [2]
+									
 								</p>
 
 								<h5>
-									Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+									¿Qué es el zIndex y para qué sirve?
 
 								</h5>
 								<p>
-									Para evitar conflitos de información con usuarios cuya intención no es comprometer el sistema.
+									
 								</p>
 
 								<h5>
