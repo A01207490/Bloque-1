@@ -36,7 +36,7 @@
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-					<a class="nav-link" id="watermark-tab" data-toggle="tab" href="#watermark" role="tab" aria-controls="watermark" aria-selected="true">Watermark</a>
+					<a class="nav-link active" id="watermark-tab" data-toggle="tab" href="#watermark" role="tab" aria-controls="watermark" aria-selected="true">Watermark</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" id="estilo-tab" data-toggle="tab" href="#estilo" role="tab" aria-controls="estilo" aria-selected="false">Style</a>
@@ -50,7 +50,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link active" id="drag-tab" data-toggle="tab" href="#drag" role="tab" aria-controls="drag" aria-selected="false">Drag and Drop</a>
+					<a class="nav-link" id="drag-tab" data-toggle="tab" href="#drag" role="tab" aria-controls="drag" aria-selected="false">Drag and Drop</a>
 				</li>
 
 				<li class="nav-item">
@@ -71,7 +71,7 @@
 			<div class="tab-content">
 
 				<!-- Watermark -->
-				<div class="tab-pane" id="watermark" role="tabpanel" aria-labelledby="watermark-tab">
+				<div class="tab-pane active" id="watermark" role="tabpanel" aria-labelledby="watermark-tab">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm">
@@ -237,8 +237,8 @@
 
 				<!--------------------------------------------------------------------------------------->
 
-				<!-- Preguntas -->
-				<div class="tab-pane active" id="drag" role="tabpanel" aria-labelledby="drag-tab">
+				<!-- Drag -->
+				<div class="tab-pane" id="drag" role="tabpanel" aria-labelledby="drag-tab">
 					<!-- Container -->
 					<div class="container">
 
@@ -256,21 +256,16 @@
 
 						<div class="row" style="height: 180px">
 							<div class="col-sm">
-								<div class="d-flex flex-row justify-content-around align-items-center" >
-
-									
+								<div class="d-flex flex-row justify-content-around align-items-center" >						
 									<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event, this)">
 									</div>
 									<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event, this)">
 									</div>
 									<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event, this)">
 									</div>
-									
-
 								</div>
 							</div>
 						</div>
-
 						<div class="row">
 							<div class="col-sm">
 								<div class="d-flex flex-row justify-content-around align-items-center " >
@@ -282,16 +277,10 @@
 								</div>
 							</div>
 						</div>
-
-						
-						
-						
-
-
 					</div>
 					<!-- End Container -->
 				</div>
-				<!-- End Preguntas -->
+				<!-- End Drag -->
 
 				<!--------------------------------------------------------------------------------------->
 
@@ -305,14 +294,117 @@
 									¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
 								</h5>
 								<p>
-									
+									<table class="table text-white ">
+										<!-- Header -->
+										<thead class="thead-dark">
+											<tr>
+												<th>Position</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<!-- End Header -->
+										<!-- Static -->
+										<tr>
+											<td>static</td>
+											<td>
+												The element is not positioned in any special way; it is always positioned according to the normal flow of the page.
+											</td>
+											
+										</tr>
+										<!-- End Static -->
+										<!-- Relative -->
+										<tr>
+											<td>relative</td>
+											<td>
+												The element is positioned relative to its normal position. 
+											</td>
+											
+										</tr>
+										<!-- End Relative -->
+										<!-- Fixed -->
+										<tr>
+											<td>fixed</td>
+											<td>
+												The element is positioned is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+											</td>
+											
+										</tr>
+										<!-- End Fixed -->
+										<!-- Absolute -->
+										<tr>
+											<td>absolute</td>
+											<td>The element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</td>
+											
+										</tr>
+										<!-- End Absolute -->
+
+									</table> 
+									<!-- End Table -->
+									[1]
 								</p>
 
 								<h5>
 									¿Cuáles son los valores estándar para la propiedad visibility?
 								</h5>
 								<p>
-									
+									<table class="table text-white ">
+										<!-- Header -->
+										<thead class="thead-dark">
+											<tr>
+												<th>Value</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<!-- End Header -->
+										<!-- Static -->
+										<tr>
+											<td>visible</td>
+											<td>
+												The element is visible.
+											</td>
+											
+										</tr>
+										<!-- End Static -->
+										<!-- Relative -->
+										<tr>
+											<td>hidden</td>
+											<td>
+												The element is hidden (but still takes up space)
+											</td>
+											
+										</tr>
+										<!-- End Relative -->
+										<!-- Fixed -->
+										<tr>
+											<td>collapse</td>
+											<td>
+												This value removes a row or column, but it does not affect the table layout.
+											</td>
+											
+										</tr>
+										<!-- End Fixed -->
+										<!-- Absolute -->
+										<tr>
+											<td>initial</td>
+											<td>
+												Sets this property to its default value.
+											</td>
+											
+										</tr>
+										<!-- End Absolute -->
+										<!-- Absolute -->
+										<tr>
+											<td>inherit</td>
+											<td>
+												Inherits this property from its parent element. 
+											</td>
+											
+										</tr>
+										<!-- End Absolute -->
+
+									</table> 
+									<!-- End Table -->
+									[2]
 								</p>
 
 								<h5>
@@ -320,7 +412,7 @@
 
 								</h5>
 								<p>
-									
+									The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. [3]
 								</p>
 
 								<h5>
@@ -329,10 +421,13 @@
 								<p>
 									<ul>
 										<li>
-											[1] https://www.tutorialspoint.com/javascript/javascript_form_validations.htm
+											[1] https://www.w3schools.com/css/css_positioning.asp
 										</li>
 										<li>
-											[2] https://portswigger.net/support/using-burp-to-bypass-client-side-javascript-validation
+											[2] https://www.w3schools.com/cssref/pr_class_visibility.asp
+										</li>
+										<li>
+											[3] https://www.w3schools.com/cssref/pr_pos_z-index.asp
 										</li>
 									</ul>
 								</p>
