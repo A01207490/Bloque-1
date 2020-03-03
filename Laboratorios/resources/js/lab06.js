@@ -23,32 +23,31 @@ word.innerHTML = wordBank[Math.floor(Math.random() * wordBank.length)];
 
 
 enterWord.onkeyup = function(){
-  console.log(word.textContent);
-  console.log(enterWord.value);
-  console.log(word.textContent == enterWord.value);
-  if(word.textContent == enterWord.value){
-    word.innerHTML = wordBank[Math.floor(Math.random() * wordBank.length)];
-    enterWord.value= "";
-    enterWord.innerHTML= "";
-    c = 5;
-  }
+	console.log(word.textContent);
+	console.log(enterWord.value);
+	console.log(word.textContent == enterWord.value);
+	if(word.textContent == enterWord.value){
+		changeWord();
+	}
 }
 
 
 var t = setInterval(showTime, 1000);
-var w = setInterval(changeWord, 5000);
 var c = 5;
 
 function showTime() {
 	document.getElementById("demo").innerHTML = c;
 	c--;
+	if(c == -1){
+		changeWord();
+	}
 }
 
 function changeWord() {
 	c = 5;
 	word.innerHTML = wordBank[Math.floor(Math.random() * wordBank.length)];
-    enterWord.value= "";
-    enterWord.innerHTML= "";
+	enterWord.value= "";
+	enterWord.innerHTML= "";
 }
 
 
@@ -60,18 +59,18 @@ function changeWord() {
 
 function allowDrop(ev, e) {
 	if (e.id == "div1") {
-		  ev.preventDefault();
+		ev.preventDefault();
 	}
 
 }
 
 function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+	ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function drop(ev) {
 	ev.preventDefault();
 	var data = ev.dataTransfer.getData("text");
- 	ev.target.appendChild(document.getElementById(data));
- 
+	ev.target.appendChild(document.getElementById(data));
+
 }
