@@ -145,5 +145,21 @@ document.getElementById('mySidebar').innerHTML = '\
 						</div>\
 					</div>\
 				</div>\
+				<div class="row">\
+					<div class="col-md-12">\
+						<div class="d-flex justify-content-start  align-items-start">\
+							<div class="p-2">\
+								<a href="lab07.html" class="">\
+									<i class="material-icons">\
+										folder\
+									</i>\
+									<h5>\
+										Laboratorio 07\
+									</h5>\
+								</a>\
+							</div>\
+						</div>\
+					</div>\
+				</div>\
 			</div>\
 		</div>'
