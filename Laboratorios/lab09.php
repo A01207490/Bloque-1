@@ -69,7 +69,7 @@ include '_sidebar.html';
 						<ul>
 							<li>
 								<?php echo "Average - ".$average."<br>"; ?>
-							</li>
+							rsort($arr);			</li>
 							<li>
 								<?php echo "Median - ".$median."<br>"; ?>
 							</li>
@@ -174,7 +174,24 @@ include '_sidebar.html';
 								</h5>
 
 								<p>
+									Para que el servidor pueda ser accesado por cualquier visitante que se conecta por el internet, el sitio necesita ser público. Para lograr esto, en el menu principal ‘http://localhost’, hacer click en el link 'Apache' y abrir archivo llamado 'httpd.conf'. Remplazar las líneas:
+									<ul>
+										<li>
+											Order Deny,Allow
+										</li>
+										<li>
+											Deny from all
+										</li>
+										con
+										<li>
+											Order Allow,Deny
+										</li>
+										<li>
+											Allow from all
+										</li>
+									</ul>
 									[2]
+									También se debe de dar acceso a todas las carpteas (644) y poner un index.html vacio, para que no puedan ver el contenido de los carpetas.
 								</p>
 
 								<h5>
@@ -182,7 +199,7 @@ include '_sidebar.html';
 								</h5>
 
 								<p>
-									[3]
+									Cuando un servidor recibe una petición, envía las declaraciones html, pero las declaraciones PHP son procesadas por el software PHP antes de que sean enviandas al solicitante. Cuando estas declaraciones son procesadas, solo el output o cualquier cosa que se imprima a la pantalla es enviada por el servidor al navegador. Las declaraciones PHP que no producen ninguna salida a la pantalla, no se incluyen en el output que se envía al browser, por lo que el código PHP normalmente no es visto por el usuario. [3]
 								</p>
 
 								<h5>
@@ -191,13 +208,13 @@ include '_sidebar.html';
 								<p>
 									<ul>
 										<li>
-											[1] 
+											[1] https://www.php.net/manual/en/function.phpinfo.php
 										</li>
 										<li>
-											[2]
+											[2] https://www.dummies.com/programming/php/how-php-works/
 										</li>
 										<li>
-											[3] 
+											[3] https://www.dummies.com/programming/php/how-php-works/
 										</li>
 									</ul>
 								</p>
