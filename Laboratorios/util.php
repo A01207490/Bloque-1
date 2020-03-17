@@ -13,11 +13,14 @@ function match($name, $company, $type1, $type2) {
 		$hackandslashtext = "Devil May Cry 5";
 	}
 
-	if($type1 == "openworld" && $type2 == "hackandslash"){	
-		include("_match.html");
-		include("_openworld");
-		include("_hackandslash");
+	include("_matchabove.html");
+	if($type1 == "openworld"){	
+		include("_openworldcard.html");
+	}	
+	if($type2 == "hackandslash"){
+		include("_hackandslashcard.html");
 	}
+	include("_matchbelow.html");
 
 }
 

@@ -64,7 +64,7 @@ include '_sidebar.html';
 							<input type="checkbox" id="type1" name="type1" value="openworld" autocomplete="off">
 							<label for="openworld">Open World</label><br>
 
-							<input type="checkbox" id="type2" name="type2" value="hackandslash" autocomplete="off">
+							<input type="checkbox" id="type1" name="type2" value="hackandslash" autocomplete="off">
 							<label for="hackandslash">Hack and Slash</label><br>
 
 							
@@ -88,55 +88,52 @@ include '_sidebar.html';
 					<form>
 						<div class="form-group">
 							<h5>
-								¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.
+								¿Por qué es una buena práctica separar el controlador de la vista? 
 							</h5>
 							<p>
-								Regresa información acerca de la configuración de PHP. 
+								Para tratar de manera separada los cambios a la base de datos y codigo de backend y dejar intacta la interfaz.  
 								[1]
 							</p>
-							<ol>
-								<li>
-									Información: opciones de compilación, extensiones, versión de php, información del servidor y ambiente, ambiente PHP, versión del OS, paths, valores locales y master de opciones de configuración, headers HTTP y licencia PHP. [1]
-								</li>
-								<li>
-									Usado comunmente para revisar configuración y variables predefinidas del sistema. [1]
-								</li>
-								<li>
-									Valiosa herramienta para hacer "debugging", ya que contiene todos los datos EGPCS (Environment, GET, POST, Cookie, Server). [1]
-								</li>
-							</ol>
 
 							<h5>
-								¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción? 
+								Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
 							</h5>
 
 							<p>
-								Para que el servidor pueda ser accesado por cualquier visitante que se conecta por el internet, el sitio necesita ser público. Para lograr esto, en el menu principal ‘http://localhost’, hacer click en el link 'Apache' y abrir archivo llamado 'httpd.conf'. Remplazar las líneas:
 								<ul>
 									<li>
-										Order Deny,Allow
+										HEAD: igual que GET pero sin el cuerpo de respuesta.
 									</li>
 									<li>
-										Deny from all
+										PUT: eviar datos al servidor para actualizar recursos. 
 									</li>
-									con
-									<li>
-										Order Allow,Deny
-									</li>
-									<li>
-										Allow from all
-									</li>
+
 								</ul>
 								[2]
-								También se debe de dar acceso a todas las carpteas (644) y poner un index.html vacio, para que no puedan ver el contenido de los carpetas.
 							</p>
 
 							<h5>
-								¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.
+								Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
 							</h5>
 
 							<p>
-								Cuando un servidor recibe una petición, envía las declaraciones html, pero las declaraciones PHP son procesadas por el software PHP antes de que sean enviandas al solicitante. Cuando estas declaraciones son procesadas, solo el output o cualquier cosa que se imprima a la pantalla es enviada por el servidor al navegador. Las declaraciones PHP que no producen ninguna salida a la pantalla, no se incluyen en el output que se envía al browser, por lo que el código PHP normalmente no es visto por el usuario. [3]
+								<ul>
+									<li>
+										mysqli_connect: abrir una nueva conexión con el servidor MySQL.
+									</li>
+									<li>
+										 mysqli_execute: ejecuta un Query preparado. 
+									</li>
+								</ul>
+								[3]
+							</p>
+
+							<h5>
+								¿Qué es XSS y cómo se puede prevenir?
+							</h5>
+
+							<p>
+								Es una vulnerabilidad web que permite a un atacante comprometer las interacciones que tiene el usuario con una aplicación, es decir, consiste en ejecutar códigos JavaScript maliciosos para acceder a información de un usuario víctima o incluso realizar acciones que el usuario tiene permitidas en la aplicación. Para prevenirlo, se puede: filtar el input cuando arriba, codificar datos cuando son enviados, usar headers apropiados o utilizar Content Security Policy. [4] 
 							</p>
 
 							<h5>
@@ -145,13 +142,16 @@ include '_sidebar.html';
 							<p>
 								<ul>
 									<li>
-										[1] https://www.php.net/manual/en/function.phpinfo.php
+										[1] https://codigofacilito.com/articulos/mvc-model-view-controller-explicado
 									</li>
 									<li>
-										[2] https://www.dummies.com/programming/php/how-php-works/
+										[2] https://www.w3schools.com/tags/ref_httpmethods.asp
 									</li>
 									<li>
-										[3] https://www.dummies.com/programming/php/how-php-works/
+										[3] https://www.php.net/manual/en/functions.internal.php
+									</li>
+									<li>
+										[4] https://portswigger.net/web-security/cross-site-scripting
 									</li>
 								</ul>
 							</p>
