@@ -24,5 +24,8 @@ function match($name, $company, $type1, $type2) {
 
 }
 
+function clean_input($variable) {
+     return $variable = htmlspecialchars($variable);
+ }
 
 ?> 
