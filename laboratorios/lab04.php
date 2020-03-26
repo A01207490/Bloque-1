@@ -1,28 +1,13 @@
-<!DOCTYPE html>
 <html>
+
 <head>
 
-	<meta charset="UTF-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Custom SASS for this template -->
-	<link href="../main.css" rel="stylesheet">
-	<link href="resources/css/collapsedSidebar.css" rel="stylesheet">
-	<!-- Google Material Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<title>Laboratorio 04</title>
+	<?php include '_head.html'; ?>
+	<title><?php echo basename(__DIR__); ?></title>
 </head>
-<body >
-	<!------------------------------------------------------------------------------------------------------->
-	
-	<!-- Side Navbar -->
-	<div id="mySidebar" >
-		
-	</div>
-	<!-- End Side Navbar -->
 
-	<!------------------------------------------------------------------------------------------------------->
-
+<body>
+	<?php include '_sidebar.html'; ?>
 	<!-- MAIN -->
 	<div id="main">
 		<!--------------------------------------------------------------------------------------->
@@ -30,7 +15,7 @@
 		<!-- TOP NAVBAR -->
 		<nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
 			<!-- Toogle Sidebar Button -->
-			<button class="btn btn-green" onclick="openSideBar()"><i class="material-icons text-primary">menu</i></button> 
+			<button class="btn btn-green" onclick="openSideBar()"><i class="material-icons text-primary">menu</i></button>
 			<!-- End Toogle Sidebar Button -->
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -61,11 +46,11 @@
 									Función 1
 								</h5>
 								<p>
-									Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida 
+									Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida
 								</p>
 							</div>
 							<div class="col-sm">
-								<button class="btn btn-purple text-primary"  id="launch" onclick="fun1()">
+								<button class="btn btn-purple text-primary" id="launch" onclick="fun1()">
 									<i class="material-icons">
 										launch
 									</i>
@@ -81,11 +66,11 @@
 									Función 2
 								</h5>
 								<p>
-									Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta. 
+									Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.
 								</p>
 							</div>
 							<div class="col-sm">
-								<button class="btn btn-purple text-primary"  id="launch" onclick="fun2()">
+								<button class="btn btn-purple text-primary" id="launch" onclick="fun2()">
 									<i class="material-icons">
 										launch
 									</i>
@@ -104,7 +89,7 @@
 								</p>
 							</div>
 							<div class="col-sm">
-								<button class="btn btn-purple text-primary"  id="launch" onclick="fun3()">
+								<button class="btn btn-purple text-primary" id="launch" onclick="fun3()">
 									<i class="material-icons">
 										launch
 									</i>
@@ -123,7 +108,7 @@
 								</p>
 							</div>
 							<div class="col-sm">
-								<button class="btn btn-purple text-primary"  id="launch" onclick="fun4()">
+								<button class="btn btn-purple text-primary" id="launch" onclick="fun4()">
 									<i class="material-icons">
 										launch
 									</i>
@@ -142,7 +127,7 @@
 								</p>
 							</div>
 							<div class="col-sm">
-								<button class="btn btn-purple text-primary"  id="launch" onclick="fun5()">
+								<button class="btn btn-purple text-primary" id="launch" onclick="fun5()">
 									<i class="material-icons">
 										launch
 									</i>
@@ -157,14 +142,14 @@
 									Función 6
 								</h5>
 								<p>
-									Para los siguientes laboratorios y proyecto, realicé los siguientes dos botones para aumentar o disminuir la cantidad de algún concepto. 
+									Para los siguientes laboratorios y proyecto, realicé los siguientes dos botones para aumentar o disminuir la cantidad de algún concepto.
 								</p>
 							</div>
 
 							<div class="col-sm">
 								<div class="d-flex flex-row justify-content-end align-items-center">
 									<div class="p-2">
-										<button class="btn btn-purple text-primary"  id="launch" onclick="slowDown()">
+										<button class="btn btn-purple text-primary" id="launch" onclick="slowDown()">
 											<i class="material-icons">
 												remove
 											</i>
@@ -176,7 +161,7 @@
 										</div>
 									</div>
 									<div class="p-2">
-										<button class="btn btn-purple text-primary"  id="launch" onclick="accelerate()">
+										<button class="btn btn-purple text-primary" id="launch" onclick="accelerate()">
 											<i class="material-icons">
 												add
 											</i>
@@ -212,10 +197,10 @@
 							<td>Lenguaje compilado</td>
 							<td>Lenguaje interpretado</td>
 						</tr>
-					</table> 
+					</table>
 					<br>
 					<h5>
-						¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) 
+						¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
 					</h5>
 
 					<table class="table table-dark table-striped">
@@ -243,7 +228,7 @@
 							<td>getMinutes()</td>
 							<td>Get the minute (0-59)</td>
 						</tr>
-					</table> 
+					</table>
 					<br>
 					<h5>
 						¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
@@ -259,7 +244,7 @@
 						</tr>
 						<tr>
 							<td>join()</td>
-							<td> 	Joins all elements of an array into a string</td>
+							<td> Joins all elements of an array into a string</td>
 						</tr>
 						<tr>
 							<td>push()</td>
@@ -273,10 +258,10 @@
 							<td>toString()</td>
 							<td>Converts an array to a string, and returns the result</td>
 						</tr>
-					</table> 
+					</table>
 					<br>
 					<h5>
-						¿Cómo se declara una variable con alcance local dentro de una función? 
+						¿Cómo se declara una variable con alcance local dentro de una función?
 					</h5>
 					<p>
 						Para declarar una variable de alcance local se antecede el nombre de la variable con la palabra reservada "var".
@@ -286,14 +271,14 @@
 						¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
 					</h5>
 					<p>
-						Implica que todos lo scripts y funciones de la página web pueden consultar o modificar el valor de dicha variable. 
+						Implica que todos lo scripts y funciones de la página web pueden consultar o modificar el valor de dicha variable.
 					</p>
 					<br>
 					<h5>
 						¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?
 					</h5>
 					<p>
-						Para buscar patrones en un string se puede utilizar el método match(). Este método sería útil en una plicación web para devolver resultados a partir de una busqueda de una palabra clave. 
+						Para buscar patrones en un string se puede utilizar el método match(). Este método sería útil en una plicación web para devolver resultados a partir de una busqueda de una palabra clave.
 					</p>
 					<br>
 					<h5>
@@ -324,31 +309,13 @@
 		</div>
 		<!-- END PAGE CONTENT -->
 
-		<!--------------------------------------------------------------------------------------->
-
-		<footer class="fixed-bottom" id="myFooter">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="#" id="dir"></a></li>
-					<li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
-				</ol>
-			</nav>
-		</footer>
 
 		<!--------------------------------------------------------------------------------------->
 	</div>
 	<!-- END MAIN -->
 
-	<!------------------------------------------------------------------------------------------------------->
-
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="resources/js/collapsedSidebar.js"></script>
-	<script src="resources/js/lab04.js"></script>
-	<script src="resources/js/injectSideBar.js"></script>
-
-	<!------------------------------------------------------------------------------------------------------->
-
+	<?php include '_footer.html'; ?>
 </body>
-</html> 
+
+
+</html>

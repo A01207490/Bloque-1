@@ -1,29 +1,13 @@
-<!DOCTYPE html>
 <html>
+
 <head>
 
-	<meta charset="UTF-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Custom SASS for this template -->
-	<link href="../main.css" rel="stylesheet">
-	<link href="resources/css/collapsedSidebar.css" rel="stylesheet">
-	<link href="resources/css/lab06.css" rel="stylesheet">
-	<!-- Google Material Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<title>Laboratorio 06</title>
+  <?php include '_head.html'; ?>
+  <title><?php echo basename(__DIR__); ?></title>
 </head>
-<body >
-	<!------------------------------------------------------------------------------------------------------->
-	
-	<!-- Side Navbar -->
-	<div id="mySidebar">
 
-	</div>
-	<!-- End Side Navbar -->
-
-	<!------------------------------------------------------------------------------------------------------->
-
+<body>
+  <?php include '_sidebar.html'; ?>
 	<!-- MAIN -->
 	<div id="main">
 		<!--------------------------------------------------------------------------------------->
@@ -31,7 +15,7 @@
 		<!-- TOP NAVBAR -->
 		<nav class="navbar navbar-expand-lg bg-primary border-bottom" id="navbar">
 			<!-- Toogle Sidebar Button -->
-			<button class="btn btn-green" onclick="openSideBar()"><i class="material-icons text-primary">menu</i></button> 
+			<button class="btn btn-green" onclick="openSideBar()"><i class="material-icons text-primary">menu</i></button>
 			<!-- End Toogle Sidebar Button -->
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -135,7 +119,7 @@
 					<!-- Container -->
 				</div>
 				<!-- End Estilo -->
-				
+
 				<!--------------------------------------------------------------------------------------->
 
 				<!-- Writer with help button -->
@@ -192,7 +176,7 @@
 								<div class="row">
 									<div class="col-sm">
 										<div class="d-flex flex-row justify-content-start align-items-center" style="height: 30px">
-											
+
 											<div class="p-2">
 												<label for="enterWord" id="word">word</label>
 											</div>
@@ -256,7 +240,7 @@
 
 						<div class="row" style="height: 180px">
 							<div class="col-sm">
-								<div class="d-flex flex-row justify-content-around align-items-center" >						
+								<div class="d-flex flex-row justify-content-around align-items-center">
 									<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event, this)">
 									</div>
 									<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event, this)">
@@ -268,12 +252,12 @@
 						</div>
 						<div class="row">
 							<div class="col-sm">
-								<div class="d-flex flex-row justify-content-around align-items-center " >
+								<div class="d-flex flex-row justify-content-around align-items-center ">
 
 									<div class="p-3">
-										<img id="drag1" src="resources/images/samus2.png" draggable="true" ondragstart="drag(event)"  height="180">
+										<img id="drag1" src="resources/images/samus2.png" draggable="true" ondragstart="drag(event)" height="180">
 									</div>
-									
+
 								</div>
 							</div>
 						</div>
@@ -309,36 +293,36 @@
 											<td>
 												The element is not positioned in any special way; it is always positioned according to the normal flow of the page.
 											</td>
-											
+
 										</tr>
 										<!-- End Static -->
 										<!-- Relative -->
 										<tr>
 											<td>relative</td>
 											<td>
-												The element is positioned relative to its normal position. 
+												The element is positioned relative to its normal position.
 											</td>
-											
+
 										</tr>
 										<!-- End Relative -->
 										<!-- Fixed -->
 										<tr>
 											<td>fixed</td>
 											<td>
-												The element is positioned is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+												The element is positioned is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
 											</td>
-											
+
 										</tr>
 										<!-- End Fixed -->
 										<!-- Absolute -->
 										<tr>
 											<td>absolute</td>
 											<td>The element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</td>
-											
+
 										</tr>
 										<!-- End Absolute -->
 
-									</table> 
+									</table>
 									<!-- End Table -->
 									[1]
 								</p>
@@ -362,7 +346,7 @@
 											<td>
 												The element is visible.
 											</td>
-											
+
 										</tr>
 										<!-- End Static -->
 										<!-- Relative -->
@@ -371,7 +355,7 @@
 											<td>
 												The element is hidden (but still takes up space)
 											</td>
-											
+
 										</tr>
 										<!-- End Relative -->
 										<!-- Fixed -->
@@ -380,7 +364,7 @@
 											<td>
 												This value removes a row or column, but it does not affect the table layout.
 											</td>
-											
+
 										</tr>
 										<!-- End Fixed -->
 										<!-- Absolute -->
@@ -389,20 +373,20 @@
 											<td>
 												Sets this property to its default value.
 											</td>
-											
+
 										</tr>
 										<!-- End Absolute -->
 										<!-- Absolute -->
 										<tr>
 											<td>inherit</td>
 											<td>
-												Inherits this property from its parent element. 
+												Inherits this property from its parent element.
 											</td>
-											
+
 										</tr>
 										<!-- End Absolute -->
 
-									</table> 
+									</table>
 									<!-- End Table -->
 									[2]
 								</p>
@@ -446,34 +430,12 @@
 
 		<!--------------------------------------------------------------------------------------->
 
-		<!-- Footer -->
-
-		<footer class="fixed-bottom" id="myFooter">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="#" id="dir"></a></li>
-					<li class="breadcrumb-item set-text" aria-current="page"><a href="#"></a></li>
-				</ol>
-			</nav>
-		</footer>
-
-		<!-- End Footer -->
-
 		<!--------------------------------------------------------------------------------------->
 	</div>
 	<!-- END MAIN -->
 
-	<!------------------------------------------------------------------------------------------------------->
-
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="resources/js/collapsedSidebar.js"></script>
-	<script src="resources/js/lab04.js"></script>
-	<!--<script src="resources/js/injectSideBar.js"></script>-->
-	<script src="resources/js/lab06.js"></script>
-	<script src="resources/js/injectSideBar.js"></script>
-	<!------------------------------------------------------------------------------------------------------->
-
+	<?php include '_footer.html'; ?>
 </body>
-</html> 
+
+
+</html>
