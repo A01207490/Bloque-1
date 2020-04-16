@@ -54,10 +54,15 @@ function juegos_consultar($juego_genero, $juego_estudio)
 	$query = ("	SELECT *
 				FROM juegos");
 	if ($juego_genero != "") {
-		$query .= " AND juego_genero=" . $juego_genero;
-	}
-	if ($juego_estudio != "") {
-		$query .= " AND juego_estudio=" . $juego_estudio;
+		$query .= " WHERE juego_genero='$juego_genero'";
+		if ($juego_estudio != "") {
+			$query .= " AND juego_estudio='$juego_estudio'";
+		}
+	} else if ($juego_estudio != "") {
+		$query .= " WHERE juego_estudio='$juego_estudio'";
+		if ($juego_genero != "") {
+			$query .= " AND juego_genero='$juego_genero'";
+		}
 	}
 	$result = mysqli_query($con, $query);
 	$table = "";
@@ -71,7 +76,7 @@ function juegos_consultar($juego_genero, $juego_estudio)
 	}
 	mysqli_free_result($result);
 	mysqli_close($con);
-	return $table;
+	echo $table;
 }
 
 function juegos_menu()
