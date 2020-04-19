@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 10, 2020 at 02:31 AM
+-- Generation Time: Apr 19, 2020 at 09:11 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -63,13 +63,15 @@ CREATE TABLE `generos` (
 INSERT INTO `generos` (`genero_nombre`) VALUES
 ('Action Adventure'),
 ('Fighting'),
-('Fisrt Person Shooter'),
+('First Person Shooter'),
 ('Hack and Slash'),
 ('JRPG'),
 ('Open World'),
+('Platformer'),
 ('Racing'),
 ('RPG'),
-('Strategy');
+('Strategy'),
+('Third Person Shooter');
 
 -- --------------------------------------------------------
 
@@ -89,7 +91,15 @@ CREATE TABLE `juegos` (
 --
 
 INSERT INTO `juegos` (`juego_nombre`, `juego_genero`, `juego_precio`, `juego_estudio`) VALUES
+('Assassin\'s Creed Odyssey', 'Open World', 49, 'Ubisoft'),
+('Call of Duty: Black Ops', 'First Person Shooter', 9, 'Activision Blizzard'),
+('Code Vein', 'Action Adventure', 59, 'Bandai Namco'),
+('Doom Eternal', 'First Person Shooter', 59, 'Bethesda'),
+('Dragon Ball Z Kakarot', 'Open World', 59, 'Bandai Namco'),
 ('Metroid Prime 4', 'Action Adventure', 59, 'Nintendo'),
+('Splatoon 2', 'Third Person Shooter', 59, 'Nintendo'),
+('Super Mario Odyssey', 'Platformer', 59, 'Nintendo'),
+('The Elder Scrolls V: Skyrim', 'Open World', 29, 'Bethesda'),
 ('The Legend of Zelda Breathe of the Wild', 'Open World', 59, 'Nintendo');
 
 --
