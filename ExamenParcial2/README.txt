@@ -1,0 +1,3 @@
+Se anexa video con una demo del funcionamiento del sitio, ya que en el servidor remoto no se puede visualizar correctamente.
+El cliente DBeaver no pudo exportar la base de datos, por lo cual se anexan dos archivos, uno que contiene el código SQL para crear las tablas, y otro que contiene el código para crear los stored procedures que se utilizaron para relizar las consultas necesarias.
+En el archivo ./sitio/util.php, se encuentran las funciones que mandan llamar a estos procedimientos.

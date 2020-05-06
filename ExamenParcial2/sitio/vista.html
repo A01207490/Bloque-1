@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-{{primary}}">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li ng-click="showConsult()" class="nav-item nav-item-teal">
+        <a class="nav-link text-center">
+          <span class="link-text">Consultar</span>
+        </a>
+      </li>
+      <li ng-click="showInsert()" class="nav-item nav-item-teal">
+        <a class="nav-link text-center">
+          <span class="link-text">Agregar</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container h-100 pt-4">
+
+
+  <!--seccion agregar proyecto-->
+  <div ng-show="tab_insert" class="mt-2 mb-1 border-bottom border-grey-lighten-1 container">
+    <div class="row">
+      <div class="col-sm">
+        <h3 class="p-2">Agregar Incidente</h3>
+      </div>
+    </div>
+    <div class="row p-2 mb-3">
+      <!--botones: reset, update-->
+      <div class="col-sm">
+        <!--privilegios: proyecto_delete, proyecto_update -->
+        <div class="row p1 h-100">
+          <div class="container d-flex justify-content-end align-items-end">
+            <div class="p-1">
+              <button class="btn btn-{{secondary}} btn-circle btn-md" role="button" data-toggle="tooltip"
+                data-placement="top" title="Agregar Incidente" ng_click="agregar_incidente()">
+                <i class="fas fa-plus fa-2x"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-1">
+      <div class="container d-flex justify-content-center">
+        <div class="flex-fill">
+          <table class="table">
+            <thead class="bg-{{primary}} text-dark">
+              <tr>
+                <th scope="col">Lugar Incidente</th>
+                <th scope="col">Tipo Incidente</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center">
+                <th scope="row">
+                  <select class="form-control select" ng-model="lugar_seleccionado"
+                    ng-options="lugar.lugar_nombre for lugar in lugares_menu">
+                    <option value="">-- seleccione nombre --</option>
+                  </select>
+                </th>
+                <th scope="row">
+                  <select class="form-control select" ng-model="tipo_incidente_seleccionado"
+                    ng-options="tipo_incidente.tipo_incidente_nombre for tipo_incidente in tipos_incidente_menu">
+                    <option value="">-- seleccione nombre --</option>
+                  </select>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div ng-show="tab_consult" class="mt-2 mb-1 border-bottom border-grey-lighten-1 container">
+    <div class="row">
+      <div class="col-sm">
+        <h3 class="p-2">Consultar Incidentes</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <label>Filtrar:
+          <input ng-model="filtro" class="form-control" />
+        </label>
+      </div>
+    </div>
+    <div class="row p-1">
+      <div class="container d-flex justify-content-center">
+        <div class="flex-fill">
+          <table class="table">
+            <thead class="bg-{{primary}} text-dark">
+              <tr>
+                <th scope="col">Fecha Incidente</th>
+                <th scope="col">Lugar Incidente</th>
+                <th scope="col">Tipo Incidente</th>
+              </tr>
+            </thead>
+            <tbody ng-repeat="incidente in incidentes | filter:filtro">
+              <tr class="text-center">
+                <th scope="row">
+                  {{incidente.incidente_fecha}}
+                </th>
+                <th scope="row">
+                  {{incidente.lugar_nombre}}
+                </th>
+                <th scope="row">
+                  {{incidente.tipo_incidente_nombre}}
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
