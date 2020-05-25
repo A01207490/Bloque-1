@@ -14,22 +14,10 @@ require_once("./util.php");
 		var app = angular.module('myApp', []);
 		app.controller('myCtrl', function($scope, $http) {
 
-			$scope.juegos = [{
-					name: 'Zelda',
-					publisher: 'Nintendo'
-				},
-				{
-					name: 'Metroid',
-					publisher: 'Nintendo'
-				},
-				{
-					name: 'Super Mario',
-					publisher: 'Nintendo'
-				}
-			];
-			console.log($scope.juegos);
+			
 			$http.get('http://localhost:8002/juegos').then(function(response) {
-				//$scope.juegos = response.data;				
+				$scope.juegos = response.data;
+				console.log(response.data);				
 			});
 
 
