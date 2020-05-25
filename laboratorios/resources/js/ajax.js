@@ -33,7 +33,7 @@ function refresh() {
 }
 
 function filtrar_juegos_jquery() {
-    console.log("Filtrar"); 
+    console.log("Filtrar");
     console.log($("#juego_genero").val());
     //$.post manda la petición asíncrona por el método post. También existe $.get
     $.get("controllers/juego_filtrar.php", {
@@ -80,5 +80,19 @@ function filtrar_juegos() {
         request.send(null);
     }
 }
+
+function anadir_juego_jquery() {
+    console.log($("#juego_nombre_insertar").val());
+    //$.post manda la petición asíncrona por el método post. También existe $.get
+    $.post("controllers/juego_insertar.php", {
+        juego_genero: $("#juego_genero_insertar").val(),
+        juego_estudio: $("#juego_estudio_insertar").val(),
+        juego_nombre: $("#juego_nombre_insertar").val(),
+        juego_precio: $("#juego_precio_insertar").val()
+    }).done(function (data) {
+        $("#juego_insertar_mensaje").html("Juego agregado exitosamente");
+    });
+}
+
 
 document.getElementById('filtrar').onclick = filtrar_juegos;
